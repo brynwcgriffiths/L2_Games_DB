@@ -2,6 +2,18 @@
 
 <html lang="en">
 
+<?php	
+	session_start();
+	include("config.php");
+	//Conect to database
+		$dbconnect=mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
+
+	if(mysqli_connect_errno()) {
+		echo "Connection failed:".mysqli_connect_error();
+		exit;
+	}
+	?>
+
 	<head>
 		<meta charset="utf-8">
 		
@@ -16,7 +28,7 @@
 		<link href="http://fonts.googleapis.com/css?family=Lato%7cUbuntu"
 		rel="stylesheet">
 		
-		<link rel"stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/data_style.css"> <!--custom style sheet -->
 	</head>
 	
