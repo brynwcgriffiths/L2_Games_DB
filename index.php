@@ -15,11 +15,6 @@
 					This is where the search area goes
 				</p>
 			</div> <!-- / side -->
+
+<?php include("bottombit.php") ?>			
 			
-			<div class="box footer">
-				<p>Mrs Sarah Greeff 2020</p>
-			</div> <!-- / footer -->
-			
-		</div> <!-- / wrapper -->
-	</body>
-</html>
