@@ -10,13 +10,5 @@
 				</p>
 			</div> <!-- / main -->
 			
-			<div class="box side">
-				<h2>Search Area</h2>
-				
-				<p>
-					This is where the search area goes
-				</p>
-			</div> <!-- / side -->
-
 <?php include("bottombit.php") ?>			
 			
