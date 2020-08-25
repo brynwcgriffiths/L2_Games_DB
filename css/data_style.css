@@ -140,7 +140,10 @@ a.side:hover {color:#8a1737; }
     border-radius: 5px;
     padding: 20px;
     }
-
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 
 

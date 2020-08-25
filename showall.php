@@ -30,11 +30,61 @@
                             ?>
                 <!--results go here-->
                 <div class = "results">
-                    <span class="sub_heading">
-                        <a href="<?php echo $find_rs['URL']; ?>">
-                            <?php echo $find_rs['Name']; ?>
-                        </a>
-                    </span> - <?php echo $find_rs['Subtitle']; ?>
+                <!--heading and sub heading-->
+                <div class="flex-container">
+                    <div>
+                        <span class="sub_heading">
+                            <a href="<?php echo $find_rs['URL']; ?>">
+                                <?php echo $find_rs['Name']; ?>
+                            </a>
+                        </span>
+                    </div>
+                    
+                    <?php 
+                        if($find_rs['Subtitle'] != "") {
+                    ?>
+                        <div>
+                        &nbsp; &nbsp; | &nbsp; &nbsp;
+                        <?php echo $find_rs['Subtitle']; ?>
+                        </div>
+                    <?php
+                        }
+                    ?>
+                <!--ratings-->
+                <div class = "flex-container">
+                        <!--star source: https://www.codepen.io/Bluetidepro/pen/GkpEa-->
+                        <div class = "star-ratings-sprite">
+                        </div>
+
+                        <div class = "actual-rating">
+                            (<?php echo $find_rs['User Rating']; ?> based of  
+                            <?php echo $find_rs['User Rating Count']; ?> ratings)
+                        </div>
+                </div>
+                <!--price-->
+                <?php
+                    if($find_rs['Price'] == 0) {
+                ?>
+                <p>Free 
+                        <?php   
+                            if($find_rs['Purchases'] == 1) {
+                        ?>
+                        (In App Purchases)
+                        <?php
+                            } 
+                        ?>
+                   
+                <p>
+                <?php
+                    }
+                else {
+                ?>
+                <b>Price</b>: $<?php echo $find_rs['Price']?>
+                <?php
+                }
+                ?>  
+
+                </div>
 
                     <p>
                         <b>Genre</b>:
