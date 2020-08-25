@@ -57,8 +57,8 @@
                         </div>
 
                         <div class = "actual-rating">
-                            (<?php echo $find_rs['User Rating']; ?> based of  
-                            <?php echo $find_rs['User Rating Count']; ?> ratings)
+                            (<?php echo $find_rs['User Rating'] ?> based of  
+                            <?php echo number_format($find_rs['User Rating Count']) ?> ratings)
                         </div>
                 </div>
                 <!--price-->
