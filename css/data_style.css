@@ -166,8 +166,17 @@ a.side:hover {color:#8a1737; }
       height: 21px;
       display: block;
   }
-  
-
+/*side form formatting*/
+.searchform {
+    width: 250px;
+    margin: 5px;
+}
+.search    {
+    padding:8px 15px;
+    background:#fff;
+    border: 0px solid #dbdbdb;
+    width:200px;
+}
 
 
 
